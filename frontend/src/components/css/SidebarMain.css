@@ -1,0 +1,36 @@
+
+  .main {
+    padding: 2rem 3rem;
+    background-color: #e5e2f0;
+  }
+  
+  .box {
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 37px;
+    margin: 0 0 3rem 0;
+    background-color: white;
+  }
+  
+  .left img {
+    transition: .18s ease-in;
+    border-radius: .5rem;
+  }
+  
+  .left img:hover {
+    transform: scale(1.02);
+  }
+  
+  .right {
+    padding: 0 2rem;
+    font-size: larger;
+  }
+  
+  .campustour_feed_info {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: x-large;
+  }
+  

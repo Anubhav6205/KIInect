@@ -1,0 +1,35 @@
+.widget__contents {
+  display: flex;
+  cursor: pointer;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  transition: .2s;
+}
+
+.widget__content {
+  margin: 5px;
+  display: flex;
+  padding: 5px;
+
+}
+
+.widget__contents:hover{
+  background-color: rgb(246, 246, 246);
+}
+
+.widget__content > img {
+  height: 30px;
+  border-radius: 5px;
+}
+
+.widget__contentTitle {
+  margin-left: 10px;
+}
+.widget__contentTitle > h5 {
+  color: rgb(70, 68, 68);
+}
+
+.widget__contentTitle > p {
+  color: gray;
+  font-size: small;
+}

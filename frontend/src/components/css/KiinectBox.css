@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.KiinectBox {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  
+  
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 700px;
+  padding: .4rem 1rem;
+  border-radius: 5rem;
+  background-color: #ffffff;
+  
+  
+}
+
+.avatar{
+  transform: scale(.8);
+}
+
+.KiinectBox_info {
+  display: flex;
+  align-items: center;
+}
+
+.KiinectBox_info .question_box{
+
+  margin:0 0 0 .5rem;
+  border-radius: 1rem;
+  padding:.1rem .5rem;
+  width:100%;
+  font-family: 'Poppins', sans-serif;
+  color:rgb(160, 160, 160);
+}
+
+
+

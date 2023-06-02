@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+
+}
+
+
+.blob {
+  position: absolute;
+  height: 60%;
+  width: 60%;
+  background: #5ce0a9;
+  border-radius: 60% 50% 50% 50% / 60% 50% 50% 60%; /* Set the blob shape */
+  z-index: -1;
+  animation: blob-animation 20s ease-in-out infinite;
+  transform: rotate(20deg) skew(-20deg);
+}
+
+@keyframes blob-animation {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(20deg) skew(-20deg);
+    background: rgb(177, 213, 58);
+  }
+  25% {
+    transform: translate(50px, -50px) scale(1.2) rotate(-20deg) skew(20deg);
+    background: rgb(80, 212, 183);
+  }
+  50% {
+    
+    transform: translate(-20px, 20px) scale(1) rotate(30deg) skew(-30deg);
+  }
+  75% {
+    transform: translate(30px, 50px) scale(1.4) rotate(-10deg) skew(10deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(20deg) skew(-20deg);
+    background: rgb(177, 213, 58);
+  }
+}
+
+
+.container .box {
+  height: 70%;
+  width: 60%;
+  display: flex;
+  border-radius: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(244, 255, 230, 1) 100%);
+  padding: 2rem 1rem 0 1rem;
+
+}
+
+
+
+.container .box .left {
+  flex: 1.5;
+
+}
+
+
+
+.container .box .left .logo img {
+  height: 2.5rem;
+
+
+
+}
+
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-15px, 15px);
+  }
+
+  50% {
+    transform: translate(15px, 15x);
+  }
+
+  75% {
+    transform: translate(-10px, -5px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+
+.container .box .left .cartoon {
+  margin: 3rem 0 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container .box .left .cartoon img {
+  position: absolute;
+  height: 17rem;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+.container .box .right {
+  padding: 2rem .5rem;
+  flex: 1;
+
+}
+
+
+.container .box .right .title{
+  font-family: 'Karla', sans-serif;
+}
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55%;
+  width: 100%;
+
+
+}
+
+
+
+.mid .form .btn {
+
+  border-radius: .5rem;
+  margin: 1.2rem 0 0 0;
+  padding: .5rem 1rem;
+  background-color: rgb(200, 243, 30);
+  color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  width:35%;
+
+}
+
+.fa {
+  transform: scale(1.2);
+  color: rgb(120, 120, 120)
+}
+
+.mid .form {
+  width: 100%;
+}
+
+
+.mid .form .first {
+  border-bottom: .5px solid rgb(195, 195, 195);
+}
+
+.mid .form .email {
+  display: flex;
+
+
+  background-color: white;
+  padding: .7rem 0rem;
+  width: 22rem;
+  transition: .1s ease-in;
+}
+
+.mid .form .email:hover {
+  background-color: #ededed;
+}
+
+.mid .form .email input {
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+}
+
+.mid .form .email .fa {
+  padding: .5rem 1rem;
+}
+
+.mid .form .password {
+  display: flex;
+
+  background-color: white;
+  padding: .7rem 0rem;
+  width: 22rem;
+  transition: .1s ease-in;
+}
+
+.mid .form .password:hover {
+  background-color: #ededed;
+}
+
+.mid .form .password input {
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+}
+
+.mid .form .password .fa {
+  padding: .5rem 1rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 40%;
+
+}
+
+.bottom .options {
+  color: grey;
+  font-size: .9rem;
+}
+
+.bottom .icons {
+  margin: .5rem 0 0 0;
+  display: flex;
+  align-items: center;
+
+
+
+}
+
+
+.bottom .icons .google {
+  background-color: white;
+  border-radius: 50%;
+
+}
+
+.bottom .icons .google img {
+  height: 2.5rem;
+}
+
+
+.bottom .icons .github {
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 0 0 1rem;
+}
+
+.bottom .icons .github img {
+  height: 1.8rem;
+}
+
+
+/* For devices with screen widths between 768px and 1024px */
+@media only screen  and (max-width:1450px){
+  .container .box .left .cartoon img{
+    height:13rem;
+    
+  }
+
+}
+
+@media only screen  and (max-width:1250px){
+  .container .box .left .cartoon img{
+    height:10rem;
+    
+  }
+
+}
+
+
+
+@media only screen  and (max-width:1150px){
+  .container .box .left  {
+    display: none;
+    
+  }
+
+  .container .box .right {
+    display: grid;
+    place-items: center;
+  
+  }
+
+  
+  .container .box .right .title{
+    margin:0;
+
+  }
+  .container .box .right .mid .form{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}
+
+
+@media only screen  and (max-width:767px){
+
+
+  
+
+  .container .box .right .mid .form div{
+
+    width:80%;
+    height:4rem;
+  }
+  .container .box{
+    width:90%;
+    height:90%;
+    transition: 1s;
+  }
+
+  .container .box .right .mid .form .btn{
+    width:50%;
+    display: grid;
+    place-items: center;
+  }
+
+  .bottom{
+    width:50%;
+  }
+
+
+}

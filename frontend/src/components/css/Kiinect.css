@@ -1,0 +1,45 @@
+.Kiinect {
+  width: "100%";
+  min-width: fit-content;
+}
+
+.Kiinect__contents {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #f1edf6;
+  min-width: fit-content;
+  width: 100%;
+}
+
+.Kiinect__content {
+  display: flex;
+  flex-direction: row;
+ 
+  width: 100%;
+  max-width: 1200px;
+}
+
+.react-responsive-modal-modal {
+  width: 90vw;
+  height: 90vh;
+}
+
+.quill {
+  height: 50vh;
+}
+
+.react-responsive-modal-overlay {
+  background: rgb(0 0 0 / 75%);
+}
+
+
+@media only screen and (max-width: 950px) {
+
+  .Kiinect__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}

@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: none;
+}
+
+
+.kHeader {
+  display: flex;
+  background-color: #fff;
+  position: sticky;
+  z-index: 1000;
+  top: 0px;
+  /* box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.5); */
+  box-shadow: 2px 3px 6px rgba(187, 187, 187, 0.5);
+  padding: .2rem;
+}
+
+.kHeader-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 2rem;
+}
+
+.kHeader-content .kHeader-left {
+  display: flex;
+  align-items: center;
+
+  flex: 1;
+
+
+}
+
+.kHeader-content .kHeader-right {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  justify-content: flex-end;
+
+
+}
+
+.kHeader__logo>img {
+  height: 60px !important;
+  
+
+
+}
+
+.kHeader__logo{
+  transition: .2s ease-in-out;
+
+}
+
+.kHeader__logo:hover{
+
+  transform:rotate(5deg)
+}
+
+.kHeader__icons {
+  display: flex;
+}
+
+.kHeader__icon {
+  cursor: pointer;
+  transition: .5s;
+  margin: 0 0 0 1.5rem;
+  padding:1rem;
+}
+
+.kHeader__icon .icon {
+  transform: scale(1.4);
+  color:rgb(65, 17, 155);
+
+}
+
+
+.kHeader__icon:hover {
+  background-color: #dfdfdf;
+  border-radius: 5px;
+  transform: scale(.95);
+
+}
+
+
+.ask_question{
+  padding:.7rem 2rem;
+  border-radius:5rem;
+  outline:none;
+  background: #6b4ae1;
+  color:white;
+  border: none;
+  transition: .2s ease-in;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.ask_question:hover{
+  opacity: .8;
+}
+.kHeader__icon>.MuiSvgIcon-root {
+  color: gray;
+  font-size: xx-large;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.kHeader__icon:hover>.MuiSvgIcon-root {
+  color: #000;
+}
+
+
+.kHeader__input {
+  display: flex;
+  align-items: center;
+  padding: .6rem 1rem;
+  border-radius: 5rem;
+  margin-left: 5px;
+  width: 70%;
+  background-color: #efecf4;
+  
+
+}
+
+.kHeader__input input::placeholder{
+  font-size: .9rem;
+  color:#939393;
+  font-family: 'Poppins', sans-serif;
+}
+
+.kHeader__input>input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding:0 .5rem;
+  color: rgb(49, 49, 49);
+  width:100%;
+}
+
+.kHeader__input>.MuiSvgIcon-root {
+  color: gray;
+}
+
+.kHeader__avatar {
+  cursor: pointer;
+}
+
+.logout {
+  margin: 0 0 0 2rem;
+  transform: scale(1.1);
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+
+
+.logout:hover {
+
+  opacity: 0.8;
+  background-color: white;
+}
+
+.kHeader__Rem {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.kHeader__Rem>.MuiSvgIcon-root {
+  font-size: xx-large;
+  color: gray;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.kHeader__Rem>.MuiSvgIcon-root:hover {
+  color: #000;
+}
+
+.kHeader__Rem>.MuiButton-root {
+  color: white;
+  background: #222;
+  text-transform: inherit;
+  border-radius: 5px;
+  margin-left: 25px;
+}
+
+.kHeader__Rem>.MuiButton-root:hover {
+  color: #222;
+  background: rgb(214, 214, 214);
+}
+
+.modal__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(187, 187, 187, 0.5);
+}
+
+.modal__title>h5 {
+  color: gray;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 30px;
+ 
+}
+
+.modal__title>h5:hover {
+  color: #b92b27;
+}
+
+.modal__info {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.modal__info>p {
+  margin-left: 10px;
+  font-size: small;
+  color: gray;
+}
+
+.modal__info>.modal__scope {
+  display: flex;
+  align-items: center;
+  color: rgb(98, 98, 98);
+  padding:.4rem .8rem;
+  margin-left: 10px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 33px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.public{
+  padding:0rem 1rem;
+}
+
+.modal__Field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  flex: 1;
+}
+
+.modal__Field>.modal__fieldLink {
+  color: gray;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.modal__Field>.modal__fieldLink>input {
+  flex: 1;
+  border: none;
+  outline: none;
+  margin-left: 5px;
+}
+
+.modal-wrap{
+  position: relative;
+
+}
+
+.modal__buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+  align-items: center;
+  position: absolute;
+  bottom:5%;
+  right:5%;
+  width:50%;
+  
+
+ 
+
+}
+
+.modal__buttons>.cancle {
+  border: none;
+  outline: none;
+  color: rgb(67, 67, 67);
+  font-weight: 500;
+  border-radius: .5rem;
+  cursor: pointer;
+  margin:0 0 0 1rem;
+  transition: .2s ease-in;
+  border-radius: 2rem;
+  padding:.7rem 2rem;
+}
+
+.modal__buttons>.cancle:hover {
+
+  background-color: rgb(232, 232, 232);
+}
+
+.link{
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+  border-bottom: none;
+}
+
+.link::placeholder{
+  color: rgba(181, 181, 181, 0.968);
+  
+}
+
+
+
+.modal__buttons>.add {
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  background-color: #222;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 33px;
+  cursor: pointer;
+  width: 50%;
+}
+
+.modal__buttons>.add:hover {
+  background-color: #eee;
+  color: #222;
+}
+
+@media only screen and (max-width: 600px) {
+  .kHeader__icons {
+    display: none;
+  }
+
+  .kHeader__input {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .kHeader {
+    padding: .2rem .5rem;
+  }
+  
+  .kHeader__input {
+    width: 60%;
+  }
+  
+  .kHeader__Rem {
+    margin-left: 10px;
+  }
+  
+  .modal__title>h5 {
+    font-size: 16px;
+  }
+  
+  .modal__info>p {
+    font-size: x-small;
+  }
+  
+  .modal__Field>.modal__fieldLink {
+    font-size: small;
+  }
+}
+
+/* For screens with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+  .kHeader {
+    padding: .2rem .3rem;
+  }
+  
+  .kHeader__input {
+    width: 50%;
+  }
+  
+  .kHeader__Rem {
+    margin-left: 5px;
+  }
+  
+  .modal__title>h5 {
+    font-size: 14px;
+  }
+  
+  .modal__info>.modal__scope {
+    display: none;
+    
+  }
+}
+
+.kHeader_icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .kHeader-content {
+    padding: 0 1rem;
+  }
+
+  .kHeader__logo > img {
+    height: 40px !important;
+  }
+
+  .kHeader__icon {
+    margin: 0 0 0 1rem;
+    padding: 0.8rem;
+  }
+
+  .kHeader__input {
+    margin-left: 0.5rem;
+    width: 60%;
+  }
+
+  .logout {
+    margin: 0 0 0 1rem;
+  }
+
+  .kHeader__Rem > .MuiButton-root {
+    margin-left: 1rem;
+  }
+
+  .modal__title > h5 {
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  .modal__Field > .modal__fieldLink > input {
+    font-size: 14px;
+  }
+
+  .modal__Field > .modal__fieldLink > .MuiSvgIcon-root {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .kHeader__icon {
+    margin: 0 0 0 0.5rem;
+    padding: 0.6rem;
+  }
+
+  .kHeader__input {
+    margin-left: 0.3rem;
+    width: 50%;
+  }
+
+  .kHeader__Rem > .MuiButton-root {
+    margin-left: 0.5rem;
+    font-size: 14px;
+  }
+
+  .modal__title > h5 {
+    font-size: 16px;
+  }
+
+  .modal__Field > .modal__fieldLink > input {
+    font-size: 12px;
+  }
+
+  .modal__Field > .modal__fieldLink > .MuiSvgIcon-root {
+    font-size: 16px;
+  }
+}
