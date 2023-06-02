@@ -18,6 +18,9 @@ Join us on GitHub: The Kiinect GitHub repository is your gateway to collaboratio
 
 Are you ready to revolutionize the way KIITians connect, engage, and thrive? Step into the world of Kiinect and embark on an unforgettable campus journey like never before!
 
+https://github.com/Anubhav6205/KIInect/assets/82750157/d279f72c-498b-473b-9ecc-56cb1654074d
+
+
 Steps to download and run KIInect on you local device:
 
 1.Downloading the Code:
@@ -43,7 +46,7 @@ Wait for the installation process to complete. This may take a few moments as np
 
 In the terminal, while still inside the project's root directory, run the following command to start the client: npm run client
 This command will build and launch the React.js client application.
-Open a web browser and visit "http://localhost:3000" to access the Kiinect client interface.
+Open a web browser and visit "http://localhost:5173" to access the Kiinect client interface.
 
 5.Running the Server:
 
@@ -51,5 +54,10 @@ Open a new terminal or command prompt window.
 Navigate to the project's root directory using the "cd" command.
 Run the following command to start the server: npm run server
 This command will launch the Node.js server using Express.js.
-The server will start listening for requests on the specified port (usually port 5000).
+The server will start listening for requests on the specified port.
+
+
+
+
+
 
